@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+}
+.container{
+    width: 400px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.header{
+    overflow: hidden;
+    position: relative
+}
+img{width: 100%}
+.imge{position: relative}
+.imge::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #000000ce;
+}
+.header i{
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    top: 20px;
+}
+i{
+    cursor: pointer;
+}
+.cl{
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
+.header p{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    left: 30px;
+}
+ul{
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-bottom: solid 1px #ddd;
+}li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 15px;
+    border-bottom: solid 1px #ddd;
+}
+li p{
+    flex: 1;
+    cursor: pointer;
+    text-align: start;
+}
+.delete{
+    font-size:20px ;
+}
+.delete:hover{
+    color: red;
+    cursor: pointer;
+}
+.linthrough{
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+.fa-check-circle{
+    color: green;
+    font-size: 20px;
+}
+#add{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0 0 ;
+}
+#add i{
+    color: rgb(25, 182, 209);
+    font-size: 30px;
+    cursor: pointer;
+}
+input{
+    border: none;
+    outline: none;
+    width: 85% ;
+    height: 40px;
+    caret-color: rgb(61, 182, 219);
+    font-size: 25px;
+}
+input:focus{
+    transition: 0.3s ease-in-out;
+    border: solid 1px rgb(61, 182, 219);
+}
+input:focus::placeholder{
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
